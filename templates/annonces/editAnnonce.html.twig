@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}LSC- Page détails {% endblock %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block body %}
+    <section class="py-5 container">
+    <h1>Modifier une annonce</h1>
+        {{ form_start(formAnnonce)}}
+            {{form_row(formAnnonce.prix)}}<br>
+            {{form_row(formAnnonce.title)}}<br>
+            {{form_row(formAnnonce.content)}}<br>
+            <input type="submit" value="Enregistrer" class="btn btn-sm btn-success">
+        {{form_end(formAnnonce)}}
+    </section>
+{% endblock %}
